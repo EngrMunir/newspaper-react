@@ -4,8 +4,9 @@ import profilePic from '../../../assets/user.png';
 const Navbar = () => {
     const navLinks = <>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/">About</NavLink></li>
+    <li><NavLink to="/about">About</NavLink></li>
     <li><NavLink to="/career">Career</NavLink></li>
+    <li><NavLink to="/login">Login</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -31,7 +32,7 @@ const Navbar = () => {
           <img alt="Tailwind CSS Navbar component" src={profilePic} />
         </div>
       </div>
-    <Link>
+    <Link to="/login">
         <button className="btn">Login</button>
     </Link>
   </div>
